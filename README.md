@@ -1,6 +1,15 @@
 # session-konphyg
 
-Configuring session stores for express for multiple environments
+Configuring session stores for the node.js express framework; session-konphyg uses konphyg to
+provide cascading configuration to support multiple environments
+
+We currently support the following session stores:
+
+- mongodb via connect-mongo
+- redis via connect-redis
+- couchdb via connect-couchdb
+- memcached via connect-memcached
+- in memory via connect
 
 # Install
 
