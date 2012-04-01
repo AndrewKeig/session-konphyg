@@ -19,7 +19,7 @@ We currently support the following session stores:
 
 Create a JSON based session configuration file, terminated by ".json".
 
-- session.production.json - configuration using mongo
+session.production.json - configuration using mongo
 
     "session_type": "mongo",
     "secret": "010100101010001010",
@@ -35,7 +35,7 @@ Create a JSON based session configuration file, terminated by ".json".
     }
 
 
-- session.json - configuration using in memory
+session.json - configuration using in memory
 
     "session_type": "memory",
     "secret": "010100101010001010",
