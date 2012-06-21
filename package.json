@@ -1,5 +1,5 @@
 { "name" : "session-konphyg"
-, "description" : "configuring session stores"
+, "description" : "Configuring session stores for the node.js express framework; session-konphyg uses konphyg to provide cascading configuration to support multiple environments"
 , "tags" : ["configuration", "session"]
 , "version" : "0.0.2"
 , "author" : "Andrew Keig <andrew.keig@gmail.com>"
