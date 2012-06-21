@@ -14,6 +14,7 @@ exports.version = '0.0.1';
 
 /* api */
 exports.options = function (basepath) {
+    if (basepath === '') throw new Error('Please provide a config file path');
     return lib.options(basepath);
 }
 
@@ -22,5 +23,6 @@ exports.store = function () {
 }
 
 exports.createSession = function (basepath){
+    if (basepath === '') throw new Error('Please provide a config file path');
     return lib.create_session(basepath);
 };
