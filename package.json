@@ -1,7 +1,7 @@
 { "name" : "session-konphyg"
 , "description" : "configuring session stores"
 , "tags" : ["configuration", "session"]
-, "version" : "0.0.1"
+, "version" : "0.0.2"
 , "author" : "Andrew Keig <andrew.keig@gmail.com>"
 , "repository" :
   { "type" : "git"

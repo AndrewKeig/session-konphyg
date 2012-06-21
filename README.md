@@ -54,7 +54,7 @@ The below example creates the session store for express
     var express = require('express')
         , app = express.createServer()
         , session = require(__dirname + '/session-konphyg')
-        , connect_session = session.createSession();
+        , connect_session = session.createSession(path_to_config_folder);
 
         app.use(express.session(connect_session));
 
@@ -64,7 +64,7 @@ The below example creates the session store for express
 The below example allows you to access the store created by createSession
 
     var session = require(__dirname + '/session-konphyg')
-        , connect_session = session.createSession();
+        , connect_session = session.createSession(path_to_config_folder);
 
     var store = session.store();
 
@@ -73,9 +73,9 @@ The below example allows you to access the store created by createSession
 The below example allows you to access the options used to create the session
 
     var session = require(__dirname + '/session-konphyg')
-        , connect_session = session.createSession();
+        , connect_session = session.createSession(path_to_config_folder);
 
-    var options = session.options()
+    var options = session.options(path_to_config_folder)
 
 
 #Environments

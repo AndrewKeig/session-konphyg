@@ -5,20 +5,22 @@
  */
 
 /* dependencies */
-var lib = require('./lib');
+
+var path = require('path');
+var lib = require(path.join(__dirname, './lib'));
 
 /* library version */
 exports.version = '0.0.1';
 
 /* api */
-exports.options = function () {
-   return lib.options();
+exports.options = function (basepath) {
+    return lib.options(basepath);
 }
 
 exports.store = function () {
-   return lib.store();
+    return lib.store();
 }
 
-exports.createSession = function (){
-    return lib.create_session();
+exports.createSession = function (basepath){
+    return lib.create_session(basepath);
 };

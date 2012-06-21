@@ -2,7 +2,7 @@ var path = require('path');
 
 exports.load = function (_session_konphyg) {
   try {
-      var store_path = path.join(__dirname, _session_konphyg.session_type);
+      var store_path = './' + _session_konphyg.session_type;
       var store = require(store_path);
       return store.get(_session_konphyg);
   } catch(err) {
