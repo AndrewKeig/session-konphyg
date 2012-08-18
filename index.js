@@ -10,7 +10,7 @@ var path = require('path');
 var lib = require(path.join(__dirname, './lib'));
 
 /* library version */
-exports.version = '0.0.1';
+exports.version = '0.0.3';
 
 /* api */
 exports.options = function (basepath) {
